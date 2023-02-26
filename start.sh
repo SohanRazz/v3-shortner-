@@ -1,12 +1,11 @@
 if [ -z $SOURCE_CODE ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Ps705112/URL-Shortener-V2
-else
+  git clone https://github.com/SohanRazz/v3-shortner-
   echo "Cloning Custom Repo from $SOURCE_CODE "
-  git clone $SOURCE_CODE /URL-Shortener-V2
+  git clone $SOURCE_CODE /v3-shortner-
 fi
-cd /URL-Shortener-V2
+cd /v3-shortner-
 pip3 install -U -r requirements.txt
 echo "Starting Bot...."
 python3 -m main
